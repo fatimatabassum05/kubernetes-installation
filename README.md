@@ -9,7 +9,7 @@
 ```
 git clone https://github.com/artisantek/kubernetes-installation
 cd kubernetes-installation
-bash install-kubernetes-1.30.sh
+bash install-kubernetes-1.28.sh
 ```
 
 ## STEP 2: Kubernetes node template is now ready create an AMI from this instance to create worker nodes
