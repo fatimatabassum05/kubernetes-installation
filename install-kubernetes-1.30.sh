@@ -52,7 +52,7 @@ echo "            -> Done"
 
 # Step 7: Install Kubernetes components
 echo "     Step 7: Installing Kubernetes components..."
-curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --dearmour -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.28/deb/Release.key | sudo gpg --dearmour -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list >/dev/null
 sudo apt update >/dev/null 2>&1
 sudo apt install -y kubeadm kubelet kubectl >/dev/null 2>&1
